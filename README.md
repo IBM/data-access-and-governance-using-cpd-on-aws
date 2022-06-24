@@ -63,13 +63,13 @@ These are the components & services which are included in this Code Pattern.
 * [Data Management](https://developer.ibm.com/technologies/data-management/): Organize and maintain data processes through the information lifecycle.
 * [Data Privacy](https://developer.ibm.com/technologies/data-privacy/): Using user data responsibly.
 
-## Data Access and Governance Use-cases
+### Data Access and Governance Use-cases
 
 This code pattern covers two use-cases per below. 
 
 ![Select Tables](/images/demo.png)
 
-# Data Virtualization Tutorial
+## Data Virtualization Tutorial
 
 Research shows that up to 68% of data is not analyzed in most organizations and up to 82% of enterprises are inhibited by data silos Data silos are one of the common problems which delays Data Analytics in most of the organizations. One of the primary reason why organizations delay data analytics is due to Data Silos challenges. Enterprise data spreads across multiple data sources, so Data Engineers face challenges to integrate data from various different kinds of data sources.
 
@@ -81,111 +81,115 @@ In this Data Virtualization tutorial we will create connections between external
 
 In addition to that you will also learn how to govern and protect virtualized views using IBM Watson Knowledge Catalog to avoid data protection and data privacy issues.
 
-### Learning Objectives:
+#### Learning Objectives:
 
 > #### In this tutorial you will learn:
 > 1. How to make a connection between external data sources & IBM Data Virtualization service
 > 2. How to virtualize the data and create a single, joined VIEW.
 
-### Learning Outcome:
+#### Learning Outcome:
 
 At the end of the tutorial you will be able to create a VIEW to query data from multiple data sources without creating data replica. This solves data silos challenges faced by enterprises which force them to copy the data into centralized repository for analytics.
 
-### Prerequisites:
+#### Prerequisites:
 
 > 1. IBM Cloud Pak for Data
 > 2. Data Virtualization on IBM Cloud Pak for Data
 > 3. External Data Sources (Amazon S3, Amazon Aurora PostgreSQL)
 > 4. IBM Watson Knowledge Catalog
 
-### Estimated time:
+#### Estimated time:
 
 It should take you approximately 15-20 minutes to complete this tutorial.
 
 [Click here to get the detailed steps to execute this tutorial](/content/dv.md)
 
-### Summary
+#### Summary
 
 In this tutorial, you have learned how to use Data Virtualization on IBM Cloud Pak for Data to virtualize data and create merged VIEW to query multiple data sources without moving or copying the data.
 
-# Data Integration Tutorial 
+## Data Integration Tutorial 
 
 ETL breaks down data silos and empowers enterprises to integrate data from multiple data sources into a single repository of well-formatted data.
 
 IBM DataStage® on IBM Cloud Pak for Data enables you to create, manage, load and run DataStage jobs to perform seamless data integration from disparate data sources to yield insightful information. IBM DataStage utilized the common ETL concepts such as flows, jobs, projects, connections, environments etc.
 
-### Learning Objectives:
+#### Learning Objectives:
 
 > #### In this tutorial you will learn:
 > 1. How to make a connection between external data source and IBM Cloud Pak for Data
 > 2. How to create ETL pipeline using IBM DataStage
 > 3. How to create scheduling rule to create data integration pipeline.
 
-### Prerequisites
+#### Prerequisites
 
 > 1. IBM Cloud Pak for Data
 > 2. IBM DataStage
 > 3. External Data Sources (Amazon S3, Amazon Aurora PostgreSQL)
 > 4. IBM Watson Knowledge Catalog
 
-### Estimated time
+#### Estimated time
 
 It should take you approximately 15 minutes to complete this lab.
 
 [Click here to get the detailed steps to execute this tutorial](/content/ds.md)
 
-### Summary
+#### Summary
 
 In this tutorial, you have learned how to create connection with Amazon S3, RDS, and Redshift and how to collect data from these data sources. Also we learned that how to create ETL pipeline using IBM DataStage.
 
-# Data Cleansing & Reshaping tutorial
+## Data Cleansing & Reshaping tutorial
 
 In this tutorial, you will learn how to clean and reshape data using IBM Data Refinery flow.
 
-### Learning Objectives:
+#### Learning Objectives:
 
 > #### In this tutorial you will learn:
 > 1. How to filter data based on age criteria
 > 2. How to visualize data
 
-### Prerequisites
+#### Prerequisites
 
 > 1. IBM Cloud Pak for Data
 > 2. IBM Data Refinery
 > 3. External Data Sources (Amazon S3, Amazon Aurora PostgreSQL)
 > 4. IBM Watson Knowledge Catalog
 
-### Estimated time
+#### Estimated time
 
 It should take you approximately 15 minutes to complete this lab.
 
 [Click here to get the detailed steps to execute this tutorial](/content/dr.md)
 
-### Summary
+#### Summary
 
 In this tutorial, you have learned how to clean or reshape the data using IBM data refinery. Also we have learned how to create catalog and how to export data from project to catalog.
 
-# Data Governance tutorial
+## Data Governance tutorial
 
 Data governance and security are bigger challenges when data spans an on-premises and cloud infrastructure. In this lab you will learn how to protect sensitive data using data masking rules.
 
-### Learning Objectives:
+#### Learning Objectives:
 
 > #### In this tutorial you will learn:
 > 1. How to Create Rules/Policies for masking/obfuscating Email Address and Last name
 > 2. How to attach rules to the data asset
 
-### Prerequisites
+#### Prerequisites
 
 > 1. IBM Cloud Pak for Data
 > 4. IBM Watson Knowledge Catalog
 
-### Estimated time
+#### Estimated time
 
 It should take you approximately 15 minutes to complete this lab.
 
 [Click here to get the detailed steps to execute this tutorial](/content/dg.md)
 
-### Summary
+#### Summary
 
 In this tutorial, you have learned how to create data protection rules and apply it to asset using IBM Watson Knowledge Catalog.
+
+# Summary
+
+In this Code Pattern covering multiple tutorials, we have learnt how to create connection between IBM Cloud Pak for Data and external data sources and how to ingest data from those data sources. We also explored different strategies to integrate data using Data Virtualization and IBM DataStage. We learnt how to clean, reshape the data using IBM Data Refinery Flow and learnt how to mask data using IBM Watson Knowledge Studio.
