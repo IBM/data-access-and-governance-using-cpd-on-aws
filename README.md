@@ -1,6 +1,6 @@
 # Data Access and Governance using CPD on AWS
 
-In this Code Pattern, we will demonstrate how to create hybrid cloud data architecture using IBM Cloud Pak for Data (CP4D) and AWS together.
+In this Code Pattern, we will demonstrate how to create hybrid cloud data architecture using IBM Cloud Pak for Data (CP4D) and AWS together. This Code Pattern has four tutorials covering different features of the IBM services on AWS environment. 
 
 `Data fabric` is a highly scalable, distributed data architecture comprising both shared data assets and streamlined data integration and governance capabilities that can be used to tackle modern data challenges. A typical data fabric solution will comprising of components such as Data Catalog, Data Integration, Data Governance, Data Visualisation etc.
 
@@ -69,8 +69,6 @@ This code pattern covers two use-cases per below.
 
 ![Select Tables](/images/demo.png)
 
-## Section
-
 # Data Virtualization Tutorial
 
 Research shows that up to 68% of data is not analyzed in most organizations and up to 82% of enterprises are inhibited by data silos Data silos are one of the common problems which delays Data Analytics in most of the organizations. One of the primary reason why organizations delay data analytics is due to Data Silos challenges. Enterprise data spreads across multiple data sources, so Data Engineers face challenges to integrate data from various different kinds of data sources.
@@ -131,4 +129,28 @@ It should take you approximately 15 minutes to complete this lab.
 
 ## Summary
 
-This lab you have learned how to create connection with Amazon S3, RDS, and Redshift and how to collect data from these data sources. Also we learned that how to create ETL pipeline using IBM DataStage.
+In this tutorial, you have learned how to create connection with Amazon S3, RDS, and Redshift and how to collect data from these data sources. Also we learned that how to create ETL pipeline using IBM DataStage.
+
+# Data Cleansing & Reshaping tutorial
+
+In this tutorial, you will learn how to clean and reshape data using IBM Data Refinery flow.
+
+## Learning Objectives:
+> #### In this tutorial you will learn:
+> 1. How to filter data based on age criteria
+> 2. How to visualize data
+
+## Prerequisites
+> 1. IBM Cloud Pak for Data
+> 2. IBM Data Refinery
+> 3. External Data Sources (Amazon S3, Amazon Aurora PostgreSQL)
+> 4. IBM Watson Knowledge Catalog
+
+## Estimated time
+It should take you approximately 15 minutes to complete this lab.
+
+[Click here to get the detailed steps to execute this tutorial](/content/dr.md)
+
+## Summary
+
+This lab you have learned how to clean or reshape the data using IBM data refinery. Also we have learned how to create catalog and how to export data from project to catalog.
