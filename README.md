@@ -69,9 +69,9 @@ This code pattern covers two use-cases per below.
 
 ![Select Tables](/images/demo.png)
 
-## Steps
+## Section
 
-* Data Virtualization
+* Data Virtualization Tutorial
 
 Research shows that up to 68% of data is not analyzed in most organizations and up to 82% of enterprises are inhibited by data silos Data silos are one of the common problems which delays Data Analytics in most of the organizations. One of the primary reason why organizations delay data analytics is due to Data Silos challenges. Enterprise data spreads across multiple data sources, so Data Engineers face challenges to integrate data from various different kinds of data sources.
 
@@ -79,7 +79,7 @@ In this lab, you will learn how to solve data silos challenges without copying o
 
 Data Virtualization(DV) refers to the process of abstracting heterogeneous data sources into a single data access layer which delivers integrated data to users or applications. DV allows you to query data from multiple data sources without creating data replicas.
 
-In this Data Virtualization lab we will create connections between external data sources and IBM Data Virtualization service and then you will create a single virtualized view by joining data from different data sources such as Amazon S3 and Amazon Aurora PostgreSQL.
+In this Data Virtualization tutorial we will create connections between external data sources and IBM Data Virtualization service and then you will create a single virtualized view by joining data from different data sources such as Amazon S3 and Amazon Aurora PostgreSQL.
 
 In addition to that you will also learn how to govern and protect virtualized views using IBM Watson Knowledge Catalog to avoid data protection and data privacy issues.
 
@@ -106,5 +106,29 @@ It should take you approximately 15-20 minutes to complete this tutorial.
 
 This lab you have learned how to use Data Virtualization on IBM Cloud Pak for Data to virtualize data and create merged VIEW to query multiple data sources without moving or copying the data.
 
+* Data Integration Tutorial 
 
+ETL breaks down data silos and empowers enterprises to integrate data from multiple data sources into a single repository of well-formatted data.
 
+IBM DataStage® on IBM Cloud Pak for Data enables you to create, manage, load and run DataStage jobs to perform seamless data integration from disparate data sources to yield insightful information. IBM DataStage utilized the common ETL concepts such as flows, jobs, projects, connections, environments etc.
+
+## Learning Objectives:
+> #### In this tutorial you will learn:
+> 1. How to make a connection between external data source and IBM Cloud Pak for Data
+> 2. How to create ETL pipeline using IBM DataStage
+> 3. How to create scheduling rule to create data integration pipeline.
+
+## Prerequisites
+> 1. IBM Cloud Pak for Data
+> 2. IBM DataStage
+> 3. External Data Sources (Amazon S3, Amazon Aurora PostgreSQL)
+> 4. IBM Watson Knowledge Catalog
+
+## Estimated time
+It should take you approximately 15 minutes to complete this lab.
+
+[Click here to get the detailed steps to execute this tutorial](/content/ds.md)
+
+## Summary
+
+This lab you have learned how to create connection with Amazon S3, RDS, and Redshift and how to collect data from these data sources. Also we learned that how to create ETL pipeline using IBM DataStage.
