@@ -71,11 +71,11 @@ This code pattern covers two use-cases per below.
 
 ## Section
 
-* Data Virtualization Tutorial
+# Data Virtualization Tutorial
 
 Research shows that up to 68% of data is not analyzed in most organizations and up to 82% of enterprises are inhibited by data silos Data silos are one of the common problems which delays Data Analytics in most of the organizations. One of the primary reason why organizations delay data analytics is due to Data Silos challenges. Enterprise data spreads across multiple data sources, so Data Engineers face challenges to integrate data from various different kinds of data sources.
 
-In this lab, you will learn how to solve data silos challenges without copying or moving data using the Data Virtualization service offered by IBM Cloud Pak for Data.
+In this tutorial, you will learn how to solve data silos challenges without copying or moving data using the Data Virtualization service offered by IBM Cloud Pak for Data.
 
 Data Virtualization(DV) refers to the process of abstracting heterogeneous data sources into a single data access layer which delivers integrated data to users or applications. DV allows you to query data from multiple data sources without creating data replicas.
 
@@ -83,30 +83,30 @@ In this Data Virtualization tutorial we will create connections between external
 
 In addition to that you will also learn how to govern and protect virtualized views using IBM Watson Knowledge Catalog to avoid data protection and data privacy issues.
 
-## Learning Objectives:
+### Learning Objectives:
 > #### In this tutorial you will learn:
 > 1. How to make a connection between external data sources & IBM Data Virtualization service
 > 2. How to virtualize the data and create a single, joined VIEW.
 
-## Learning Outcome:
+### Learning Outcome:
 At the end of the tutorial you will be able to create a VIEW to query data from multiple data sources without creating data replica. This solves data silos challenges faced by enterprises which force them to copy the data into centralized repository for analytics.
 
-## Prerequisites:
+### Prerequisites:
 > 1. IBM Cloud Pak for Data
 > 2. Data Virtualization on IBM Cloud Pak for Data
 > 3. External Data Sources (Amazon S3, Amazon Aurora PostgreSQL)
 > 4. IBM Watson Knowledge Catalog
 
-## Estimated time:
+### Estimated time:
 It should take you approximately 15-20 minutes to complete this tutorial.
 
 [Click here to get the detailed steps to execute this tutorial](/content/dv.md)
 
-## Summary
+### Summary
 
-This lab you have learned how to use Data Virtualization on IBM Cloud Pak for Data to virtualize data and create merged VIEW to query multiple data sources without moving or copying the data.
+In this tutorial you have learned how to use Data Virtualization on IBM Cloud Pak for Data to virtualize data and create merged VIEW to query multiple data sources without moving or copying the data.
 
-* Data Integration Tutorial 
+# Data Integration Tutorial 
 
 ETL breaks down data silos and empowers enterprises to integrate data from multiple data sources into a single repository of well-formatted data.
 
