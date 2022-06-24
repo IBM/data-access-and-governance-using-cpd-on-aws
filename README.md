@@ -82,27 +82,31 @@ In this Data Virtualization tutorial we will create connections between external
 In addition to that you will also learn how to govern and protect virtualized views using IBM Watson Knowledge Catalog to avoid data protection and data privacy issues.
 
 ### Learning Objectives:
+
 > #### In this tutorial you will learn:
 > 1. How to make a connection between external data sources & IBM Data Virtualization service
 > 2. How to virtualize the data and create a single, joined VIEW.
 
 ### Learning Outcome:
+
 At the end of the tutorial you will be able to create a VIEW to query data from multiple data sources without creating data replica. This solves data silos challenges faced by enterprises which force them to copy the data into centralized repository for analytics.
 
 ### Prerequisites:
+
 > 1. IBM Cloud Pak for Data
 > 2. Data Virtualization on IBM Cloud Pak for Data
 > 3. External Data Sources (Amazon S3, Amazon Aurora PostgreSQL)
 > 4. IBM Watson Knowledge Catalog
 
 ### Estimated time:
+
 It should take you approximately 15-20 minutes to complete this tutorial.
 
 [Click here to get the detailed steps to execute this tutorial](/content/dv.md)
 
 ### Summary
 
-In this tutorial you have learned how to use Data Virtualization on IBM Cloud Pak for Data to virtualize data and create merged VIEW to query multiple data sources without moving or copying the data.
+In this tutorial, you have learned how to use Data Virtualization on IBM Cloud Pak for Data to virtualize data and create merged VIEW to query multiple data sources without moving or copying the data.
 
 # Data Integration Tutorial 
 
@@ -110,24 +114,27 @@ ETL breaks down data silos and empowers enterprises to integrate data from multi
 
 IBM DataStage® on IBM Cloud Pak for Data enables you to create, manage, load and run DataStage jobs to perform seamless data integration from disparate data sources to yield insightful information. IBM DataStage utilized the common ETL concepts such as flows, jobs, projects, connections, environments etc.
 
-## Learning Objectives:
+### Learning Objectives:
+
 > #### In this tutorial you will learn:
 > 1. How to make a connection between external data source and IBM Cloud Pak for Data
 > 2. How to create ETL pipeline using IBM DataStage
 > 3. How to create scheduling rule to create data integration pipeline.
 
-## Prerequisites
+### Prerequisites
+
 > 1. IBM Cloud Pak for Data
 > 2. IBM DataStage
 > 3. External Data Sources (Amazon S3, Amazon Aurora PostgreSQL)
 > 4. IBM Watson Knowledge Catalog
 
-## Estimated time
+### Estimated time
+
 It should take you approximately 15 minutes to complete this lab.
 
 [Click here to get the detailed steps to execute this tutorial](/content/ds.md)
 
-## Summary
+### Summary
 
 In this tutorial, you have learned how to create connection with Amazon S3, RDS, and Redshift and how to collect data from these data sources. Also we learned that how to create ETL pipeline using IBM DataStage.
 
@@ -135,22 +142,50 @@ In this tutorial, you have learned how to create connection with Amazon S3, RDS,
 
 In this tutorial, you will learn how to clean and reshape data using IBM Data Refinery flow.
 
-## Learning Objectives:
+### Learning Objectives:
+
 > #### In this tutorial you will learn:
 > 1. How to filter data based on age criteria
 > 2. How to visualize data
 
-## Prerequisites
+### Prerequisites
+
 > 1. IBM Cloud Pak for Data
 > 2. IBM Data Refinery
 > 3. External Data Sources (Amazon S3, Amazon Aurora PostgreSQL)
 > 4. IBM Watson Knowledge Catalog
 
-## Estimated time
+### Estimated time
+
 It should take you approximately 15 minutes to complete this lab.
 
 [Click here to get the detailed steps to execute this tutorial](/content/dr.md)
 
-## Summary
+### Summary
 
-This lab you have learned how to clean or reshape the data using IBM data refinery. Also we have learned how to create catalog and how to export data from project to catalog.
+In this tutorial, you have learned how to clean or reshape the data using IBM data refinery. Also we have learned how to create catalog and how to export data from project to catalog.
+
+# Data Governance tutorial
+
+Data governance and security are bigger challenges when data spans an on-premises and cloud infrastructure. In this lab you will learn how to protect sensitive data using data masking rules.
+
+### Learning Objectives:
+
+> #### In this tutorial you will learn:
+> 1. How to Create Rules/Policies for masking/obfuscating Email Address and Last name
+> 2. How to attach rules to the data asset
+
+### Prerequisites
+
+> 1. IBM Cloud Pak for Data
+> 4. IBM Watson Knowledge Catalog
+
+### Estimated time
+
+It should take you approximately 15 minutes to complete this lab.
+
+[Click here to get the detailed steps to execute this tutorial](/content/dg.md)
+
+### Summary
+
+In this tutorial, you have learned how to create data protection rules and apply it to asset using IBM Watson Knowledge Catalog.
