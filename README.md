@@ -100,9 +100,11 @@ At the end of the tutorial you will be able to create a VIEW to query data from 
 ## Estimated time:
 It should take you approximately 15-20 minutes to complete this tutorial.
 
-[Click here to get the detailed steps to execute this tutorial]()
+[Click here to get the detailed steps to execute this tutorial](/content/dv.md)
 
 ## Summary
 
 This lab you have learned how to use Data Virtualization on IBM Cloud Pak for Data to virtualize data and create merged VIEW to query multiple data sources without moving or copying the data.
+
+
 
