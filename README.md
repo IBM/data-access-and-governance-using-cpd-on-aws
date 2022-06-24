@@ -4,9 +4,9 @@ In this Code Pattern, we will demonstrate how to create hybrid cloud data archit
 
 `Data fabric` is a highly scalable, distributed data architecture comprising both shared data assets and streamlined data integration and governance capabilities that can be used to tackle modern data challenges. A typical data fabric solution will comprising of components such as Data Catalog, Data Integration, Data Governance, Data Visualisation etc.
 
-In this Data Access & Governance Code Pattern, you will solve the challenges faced by different personas in Data Analytics.
+In this Data Access & Governance Code Pattern, you will solve the challenges faced by different personas in Data & AI.
 
-* Data scientists spend 80% of their time in discovering, curating, and cleansing the data. How to provide them quality data for analytics?
+* Data scientists spend 80% of their time in discovering, curating, and cleansing the data. How to provide them quality data for building AI based solutions?
 * Data Engineers face lots of challenges while integrating data from multiple data sources. How can they quickly and efficiently collect and integrate data?
 * Data Steward deals with data privacy and protection challenges. How to ensure that the data is governed, and no sensitive information is shared with data consumers?
 
@@ -104,8 +104,6 @@ It should take you approximately 15-20 minutes to complete this tutorial.
 
 [Click here to get the detailed steps to execute this tutorial](/content/dv.md)
 
-#### Summary
-
 In this tutorial, you have learned how to use Data Virtualization on IBM Cloud Pak for Data to virtualize data and create merged VIEW to query multiple data sources without moving or copying the data.
 
 ## Data Integration Tutorial 
@@ -134,8 +132,6 @@ It should take you approximately 15 minutes to complete this lab.
 
 [Click here to get the detailed steps to execute this tutorial](/content/ds.md)
 
-#### Summary
-
 In this tutorial, you have learned how to create connection with Amazon S3, RDS, and Redshift and how to collect data from these data sources. Also we learned that how to create ETL pipeline using IBM DataStage.
 
 ## Data Cleansing & Reshaping tutorial
@@ -161,8 +157,6 @@ It should take you approximately 15 minutes to complete this lab.
 
 [Click here to get the detailed steps to execute this tutorial](/content/dr.md)
 
-#### Summary
-
 In this tutorial, you have learned how to clean or reshape the data using IBM data refinery. Also we have learned how to create catalog and how to export data from project to catalog.
 
 ## Data Governance tutorial
@@ -186,10 +180,14 @@ It should take you approximately 15 minutes to complete this lab.
 
 [Click here to get the detailed steps to execute this tutorial](/content/dg.md)
 
-#### Summary
-
 In this tutorial, you have learned how to create data protection rules and apply it to asset using IBM Watson Knowledge Catalog.
 
 # Summary
 
 In this Code Pattern covering multiple tutorials, we have learnt how to create connection between IBM Cloud Pak for Data and external data sources and how to ingest data from those data sources. We also explored different strategies to integrate data using Data Virtualization and IBM DataStage. We learnt how to clean, reshape the data using IBM Data Refinery Flow and learnt how to mask data using IBM Watson Knowledge Studio.
+
+## License
+
+This code pattern is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
+
+[Apache License FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
