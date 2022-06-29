@@ -36,7 +36,7 @@ After completing this Code Pattern, you will understand how to :
 
 ## Video
 
-TBD
+[![](http://img.youtube.com/vi/VThfokHAdH4/0.jpg)](https://youtu.be/VThfokHAdH4)
 
 ## Include Components
 
