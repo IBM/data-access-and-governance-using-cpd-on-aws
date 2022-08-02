@@ -3,7 +3,7 @@
 
 > 1. Login to IBM Cloud Pak for Data with valid credentials
 
-To perform this lab you need IBM Cloud Pak for Data's credential with admin role. Credentials include both username and password. If you do not have the credentials then ask the lab instructor to provide one.
+To perform this lab you need IBM Cloud Pak for Data's credential with admin role. Credentials include both username and password.
 
 ![Login](/images/login.png)
 
@@ -17,27 +17,30 @@ Follow the below steps to make sure IBM Data Virtualization service service is i
 
 ![DV Install Check](/images/dv_install_check.png)
 
-2. Now in the search box type data virtualisation to search data virtualization service and click on it.
+2. Now in the search box type `Data Virtualization` to search Data Virtualization (DV) service and click on it.
+![DV Search Service Catalog](/images/service_catalog_dv.png)
 
-3. Inside data virtualisation service you should be able to see that the service is enabled as shown in above picture. If it is not, ask the lab instructor and get data virtualisation service enabled.
+3. Inside DV service you should be able to see that the service is enabled as shown in above picture.
+![DV Service Status](/images/dv_service_status.png)
 
-4. Now click on instances and the status of the data virtualisation instance to verify if Data virtualisation service is running without any issues.
+4. Now click on `Instances` to verify if `Data Virtualization` service is running.
+![DV Health Status](/images/dv_health.png)
 
 > ### 2. Create New Connection
 
-Click the Navigation Menu and select Data Virtualization. Then click on ‘Add connection’ to create data sources as connection in Data Virtualization. In this lab you will create connection with Amazon S3, and Amazon RDS data sources.
+In this step we will to create connection between external data sources and Data Virtualization service using CP4D connectors. In this lab, you will create connection with `Amazon S3`, and `Amazon RDS` data sources. Follow the below steps to create connection with those data sources:
 
-> 1. Click navigation menu expand 'Data' and then click 'Data Virtualization'
+> 1. Click Navigation Menu expand 'Data' and then click 'Data Virtualization'
 
 ![DV Menu](/images/dv_1.png)
 
-> 2. Click Add connection + then click new connection.
+> 2. In the Data Virtualization Page, Click Add connection + New Connection.
 
-![DV Homepage](/images/dv_2.png)
+![DV Homepage](/images/dv_2_new.png)
 
 ![Amazon Aurora Connection](/images/dv_4.png)
 
-> 3. Select 'Amazon RDS for PostgreSQL' connection type and fill the details provided by Instructor to create Amazon Aurora PostgreSQL Connection in Data Virtualization then click on Create.
+> 3. Select 'Amazon RDS for PostgreSQL' connection type and fill the details to create Amazon Aurora PostgreSQL Connection in Data Virtualization then click on Create. You can also specify any name to the connection and note it down for future reference.
 
 ![Amazon Aurora Connection](/images/DV_Create_Aurora_Connection_Option.png)
 
@@ -47,87 +50,140 @@ Click the Navigation Menu and select Data Virtualization. Then click on ‘Add c
 
 ![Skip](/images/skip.png)
 
-> 5. Similarly add Amazon S3 datasource by selecting connection type 'Amazon S3' and fill connection details provided by instructor.
+> 5. Similarly add Amazon S3 datasource by selecting connection type 'Amazon S3' and fill connection details. Similar to previous connection, You can also specify any name to the connection and note it down for future reference
 
-> 6. Once The data connections are added as a data source for Data Virtualization, and you should see the Amazon S3 and Amazon RDS PostgreSQL connection listed on the Data sources screen.
+> 6. Once you create both data sources connection successfully, you should see both Amazon S3 and Amazon RDS PostgreSQL connection listed on the Data sources page as shown below.
 
-![Connection List](/images/connection_list.png)
+![Connection List](/images/connection_list_new.png)
 
-> ### 3. Create virtual tables and views using data virtualization
+> ### 3. Create virtual tables
 
-Congratulations! You have successfully added data sources to data virtualization. now you can virtualize the table within the data virtualization. Once tables are virtualized you can create VIEW using those virtual tables.
+Congratulations! In the previous step you have successfully created connection between external data sources and `Data Virtualization` service. now you can select table and file from the connection and create Virtualized tables or objects. Once tables are virtualized you can create VIEW using those virtual tables.
 
-> 1. Open the Data Virtualization menu and click on Virtualization to expand and then click Virtualize.
+> 1. Open the Data Virtualization menu and click on Virtualization to expand and then click Virtualize as shown below.
 
 ![Virtualize Menu](/images/virtualize_menu.png)
 
-> 2. You might see several tables under Tables tab. Select the tables (ts_wallonia_region_table and ts_flanders_region_table) to create virtual tables. You can also search for or filter the tables. When selected, click Add to cart, then View cart.
+> 2. You might see several tables under Tables tab which are coming from various connections. Select the tables (ts_wallonia_region_table and ts_flanders_region_table) to create virtual tables. You can also search for or filter the tables. When selected, click Add to cart, then View cart.
 
 ![Create Virtual Table](/images/create_virtual_table.png)
 
-> 3. In this screen, You need to choose whether you want to assign the virtualized data to a data request, a project, or to the virtualized data. Select the Virtualize Data option and provide a unique table name and then click Virtualize to create Virtual table.
+>3. As shown in this screen, Select the `Virtualize Data` option and provide any unique names to table (in the image below names are ts_wallonia_region_table and ts_flanders_region_table) and note it down for future reference.
 
-![Create Virtual Table Options](/images/virtualize_1.png)
+Now click on the `Modify columns` of first table (here `ts_wallonia_region_table`) to verify name, type and length of the columns matches with image below and click `Apply`.
 
-> 4. Click on confirmation to create Virtual tables.
+Repeat the same step for another table (here `ts_flanders_region_table`).
+
+Once after making the changes click Apply and then click `Virtualize` in `Review cart and virtualize table` page.
+
+![Create Virtual Table Options](/images/virtualize_1.1.png)
+![Create Virtual Table Options](/images/virtualize_1.2.png)
+![Create Virtual Table Options](/images/virtualize_1.3.png)
+
+> 4. Click `Continue` to create Virtual tables.
 
 ![Create Virtual Table Confirmation](/images/create_virtualize_table_confirmation.png)
 
-![Create Virtual Table Confirmation 1](/images/create_virtualize_table_confirmation__2.png)
+![Create Virtual Table Confirmation 1](/images/create_virtualize_table_confirmation_1.png)
 
-> 5. Now it is time to create the joined VIEW by joining two virtualized tables/objects. This will allow you to query multiple data sources without copying or moving the data. To create VIEW we need to join two virtual tables which we created in the previous step.
-Let's click on Data Virtualization menu and expand Virtualization and then click Virtualized Data option.
+> 5. In the last step we Virtualized the tables coming from Amazon RDS connection, now let's use csv file coming from Amazon S3 connection and Virtualize it. Click `Files` tab in the `Virtualize` page as shown below and then click `Endpoint`
+
+![Virtualize Menu](/images/virtualize_file.png)
+
+>6. Navigate to regional folder inside parent bucket and select ts-Brussels-grouped-21-04.csv as shown in below image and then click `Add to cart` then `View Cart`
+
+![Virtualize Menu](/images/virtualize_file_1.1.png)
+
+> 7. In the `Review cart and virtualize page` specify unique name to the table and note it down for future reference, and then click `Modify columns` button to review columns metadata.
+
+![Virtualize Menu](/images/virtualize_file_3.1.png)
+
+> 8. Edit the column name, type, and length as shown in below image and then click `Apply`
+
+![Virtualize Menu](/images/virtualize_file_3.2.png)
+
+> 9. In the `Review cart and virtualize page` check `Virtualized data` option then click `Virtualize` button.
+
+![Virtualize Menu](/images/virtualize_file_3.3.png)
+
+> 10. Click `Continue` to create Virtual tables.
+
+![Create Virtual Table Confirmation](/images/create_virtualize_table_confirmation.png)
+
+> 11. Click View virtualized data
+
+![Virtualize Menu](/images/virtualize_file_3.4.png)
+
+> ### 4. Create VIEW by joining two virtual tables/objects
+Till now we have created connections with external data sources and from external data sources we picked tables and files to Virtualize them. Now we will use those Virtualize tables/objects and join them to create a VIEW. This VIEW will give us capability to query multiple data sources without creating data replicas.
+
+You can follow below steps to create VIEW:
+
+> 1. Click `Data Virtualization` menu and expand `Virtualization` and then click `Virtualized Data` option.
 
 ![Virtualized Data Menu](/images/view_menu.png)
 
-> 6. Select the virtual tables which you have created in the previous step. (eg here ts_wallonia_virtual_table and ts_flanders_virtual_table) and click Join.
+> 2. Select the virtual tables which you have created in the previous step. (eg here `ts_wallonia_region_table` and `ts_flanders_region_table`) and click Join.
 
-![Select Tables](/images/Join_View.png)
+![Select Tables](/images/Join_View_1.1.png)
 
-> 7. After selecting the tables and click Join.
+> 3. Join two tables by specify join key and then click on Preview to preview joined table.
 
-![Select Tables](/images/Join_View.png)
+![Select Tables](/images/Join_View_1.2.png)
 
-> 8. Join two tables by specify join key and then click on Preview to preview joined table.
+> 4. Close preview page, click `Next` on `Join virtual objects` page
 
-![Select Tables](/images/join_view_1.png)
+![Select Tables](/images/Join_View_1.3.png)
 
-![Select Tables](/images/preview.png)
+> 4. Edit the column names as shown in below image.
 
-> 9. If you see above result on preview, then click Next and edit column name as shown in below image. Then click Next.
+![Edit Column](/images/Join_View_1.4.png)
 
-![Edit Column](/images/edit_column_1.png)
+> 5. Once after ensuring all details, provide unique view name (eg. flanders_wallonia_joined_view), select `Virtualized data` checkbox and click `Create view`.
 
-> 10. Once after ensuring all details, provide unique view name (eg. FLANDERS_WALLONIA_MERGED_VIEW_V1) and click Create View.
+![Select Tables](/images/Join_View_1.5.png)
 
-![Select Tables](/images/create_view_final_v1.png)
+> 6. Click 'Virutalized Data' and Select joined view you created in previous step (eg. flanders_wallonia_joined_view) and ts_brussels_region_table table to create view.
 
-> 11. Go back to 'Virutalized Data' menu and Select joined view you created in previous step (eg. FLANDERS_WALLONIA_MERGED_VIEW_V1) and brussels table to create view.
+![Select Tables](/images/Join_View_1.6.png)
 
-![Select Tables](/images/virtualized_view_1.png)
+![](/images/Join_View_1.7.png)
 
-![Select Tables](/images/virtualized_view_2.png)
+> 7. Specify `date` as join Key and click `Preview`
 
-![Select Tables](/images/virtualized_view_3.png)
+![](/images/Join_View_1.8.png)
 
-> 12. in the above preview, there are multiple duplicate region string. So, let's customize SQL query.
+![](/images/Join_View_1.9.png)
 
-![Select Tables](/images/sql_query.png)
+> 8. Edit the column names as shown below
 
-![Select Tables](/images/sql_query_1.png)
+![](/images/Join_View_1.10.png)
 
-> 13. Once after all steps are performed, you will see below view in 'Virtualized Data' option.
+> 9. Specify the view name (eg. `brussels_wallonia_flanders_joined_view`) and click `Create view`
 
-![Select Tables](/images/final_view.png)
+![](/images/Join_View_1.11.png)
 
-> 14. Publish the view to Catalog where you can govern the view using IBM Watson Knowledge Catalog. You will learn more about governance and data protection (masking) in Governance lab.
+By following all the steps you have created a single joined view from different data source. Now let's go to the `Catalog` to view the data.
 
-![Select Tables](/images/publish.png)
-
-![Select Tables](/images/publish_1.png)
-
-> 15. Click navigation bar and expand Catalogs and click All Catalogs and select default catalog to see the view we created in last step.
+> 10. Click navigation bar and expand `Catalogs` and click All Catalogs and select `default catalog` to see the view we created in last step.
 
 ![Select Tables](/images/catalog_menu.png)
 
-![Select Tables](/images/catalog_dv.png)
+> 11. In the `Default Catalog` page you will see the joined view (brussels_wallonia_flanders_joined_view) which you have created in the last step. If you noticed view started from `ADMIN.` which is the username. In your case, it might start with `<USER_NAME>.brussels_wallonia_flanders_joined_view`.
+
+Click on the view for more details.
+
+![](/images/joined_view_1.png)
+
+> 12. Click `Assets` tab and provide your Cloud Pak for Data admin credentials.
+
+![](/images/joined_view_2.png)
+![](/images/joined_view_3.png)
+
+> 13. After successfully validating credentials, you will be able to see the integrated data.
+
+![](/images/joined_view_4.png)
+
+> 14. Click on the `Profile` tab to get statistics of data inside view.
+
+![](/images/joined_view_5.png)
