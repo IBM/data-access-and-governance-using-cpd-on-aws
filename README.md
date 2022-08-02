@@ -1,6 +1,6 @@
 # Data Access and Governance using CPD on AWS
 
-In this Code Pattern, we will demonstrate how to create hybrid cloud data architecture using IBM Cloud Pak for Data (CP4D) and AWS together. This Code Pattern has four tutorials covering different features of the IBM services on AWS environment. 
+In this Code Pattern, we will demonstrate how to create hybrid cloud data architecture using IBM Cloud Pak for Data (CP4D) and AWS together. This Code Pattern has four tutorials covering different features of the IBM services on AWS environment.
 
 `Data fabric` is a highly scalable, distributed data architecture comprising both shared data assets and streamlined data integration and governance capabilities that can be used to tackle modern data challenges. A typical data fabric solution will comprising of components such as Data Catalog, Data Integration, Data Governance, Data Visualisation etc.
 
@@ -65,7 +65,7 @@ These are the components & services which are included in this Code Pattern.
 
 ### Data Access and Governance Use-cases
 
-This code pattern covers two use-cases per below. 
+This code pattern covers two use-cases per below.
 
 ![Select Tables](/images/demo.png)
 
@@ -106,9 +106,9 @@ It should take you approximately 15-20 minutes to complete this tutorial.
 
 In this tutorial, you have learned how to use Data Virtualization on IBM Cloud Pak for Data to virtualize data and create merged VIEW to query multiple data sources without moving or copying the data.
 
-## Data Integration Tutorial 
+## Data Integration Tutorial
 
-ETL breaks down data silos and empowers enterprises to integrate data from multiple data sources into a single repository of well-formatted data.
+ETL (Extract, transform, and load) breaks down data silos and empowers enterprises to integrate data from multiple data sources into a single repository of well-formatted data.
 
 IBM DataStage® on IBM Cloud Pak for Data enables you to create, manage, load and run DataStage jobs to perform seamless data integration from disparate data sources to yield insightful information. IBM DataStage utilized the common ETL concepts such as flows, jobs, projects, connections, environments etc.
 

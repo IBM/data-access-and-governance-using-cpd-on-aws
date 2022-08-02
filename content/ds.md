@@ -2,7 +2,7 @@
 
 > 1. Login to IBM Cloud Pak for Data with valid credentials
 
-To perform this lab you need IBM Cloud Pak for Data's credential which include both username and password. If you do not have the credentials then ask the lab instructor to provide one.
+To perform this lab you need IBM Cloud Pak for Data's credential which include both username and password.
 
 ![Login](/images/login.png)
 
@@ -12,8 +12,17 @@ Click on the Navigation Menu and expend Projects and click All Projects. Then cl
 
 ![DV Menu](/images/project-1.png)
 ![DV Menu](/images/project-2.png)
+
+Click `Create an empty project` to create empty project
+
 ![DV Menu](/images/project-3.png)
+
+Give a name to project (eg. `Data_Fabric_Project`)
+
 ![DV Menu](/images/project-4.png)
+
+Once the project is created, you will redirect to `Project` page as shown below
+
 ![DV Menu](/images/project-5.png)
 
 > ### 3. Create new connections with external data sources.
@@ -41,13 +50,23 @@ Click on the Navigation Menu and expend Projects and click All Projects. Then cl
 
 ![Create connection](/images/create_connection.png)
 
+Select Amazon Redshift connector
+
 ![Data Ingestion](/images/redshift_connection_page.png)
+
+Give a name to connection (eg `Amazon Redshift Connection`)
 
 ![Data Ingestion](/images/redshift_connection_1.png)
 
+Again, Go to your `Project` page click `Add to project +` and choose `Connection`
+
 ![Create connection](/images/create_connection.png)
 
+Select Amazon RDS for PostgreSQL connector
+
 ![Data Ingestion](/images/aurora_connection_page.png)
+
+Provide connection details
 
 ![Data Ingestion](/images/aurora_connection.png)
 
@@ -55,11 +74,19 @@ Click on the Navigation Menu and expend Projects and click All Projects. Then cl
 
 ![Data Ingestion](/images/choose_asset_type.png)
 
+Click `Select source`
+
 ![Data Ingestion](/images/select_data_source.png)
+
+Select `apotheca_healthcare_personnel_data.csv`
 
 ![Data Ingestion](/images/select_connection_source_s3.png)
 
+Give any unique name to asset
+
 ![Data Ingestion](/images/select_connection_source_s3_1.png)
+
+In the `Data_Fabric_Project` page you will see the recently added asset
 
 ![Data Ingestion](/images/s3_data_asset_in_project.png)
 
@@ -67,9 +94,15 @@ Click on the Navigation Menu and expend Projects and click All Projects. Then cl
 
 ![Data Ingestion](/images/choose_asset_type.png)
 
+Discover and select `actavis_pharma_healthcare_personnel_table`
+
 ![Data Ingestion](/images/redshift_asset_discovery.png)
 
+Specify a unique name
+
 ![Data Ingestion](/images/redshift_asset_discovery_1.png)
+
+Verify asset has been added to the project
 
 ![Data Ingestion](/images/redshift_asset_discovery_2.png)
 
@@ -77,9 +110,15 @@ Click on the Navigation Menu and expend Projects and click All Projects. Then cl
 
 ![Data Ingestion](/images/choose_asset_type.png)
 
+Discover and select `mylan_specialty_personnel_data_table`
+
 ![Data Ingestion](/images/aurora_select_connection_source.png)
 
+Specify a unique name
+
 ![Data Ingestion](/images/aurora_connected_data_asset.png)
+
+Verify asset has been added to the project
 
 ![Data Ingestion](/images/aurora_connected_data_asset_1.png)
 
@@ -164,22 +203,19 @@ stage and select sort criteria by id.
 
 ![DataStage Asset Browser](/images/run_success.png)
 
-> 25. Go back to project then click on three dots as shown below to create pipeline job.
 
-![DataStage Asset Browser](/images/datastage_create_job.png)
-![DataStage Asset Browser](/images/datastage_create_job_1.png)
-![DataStage Asset Browser](/images/datastage_create_job_2.png)
-![DataStage Asset Browser](/images/datastage_create_job_3.png)
-![DataStage Asset Browser](/images/datastage_create_job_4.png)
-![DataStage Asset Browser](/images/datastage_create_job_5.png)
-![DataStage Asset Browser](/images/datastage_create_job_6.png)
-
-> 26. Now we have integrated data available in Amazon RDS for PostgreSQL. Let's ingest the data from the data source
+> 25. Now we have integrated data available in Amazon RDS for PostgreSQL. Let's ingest the data from the data source
 
 ![Data Ingestion](/images/choose_asset_type.png)
 
+Discover and select integrated table (eg. `healthcare_personnel_integrated_data_table_v1`)
+
 ![DataStage Asset Browser](/images/integrated_table.png)
 
+Specify the name to asset
+
 ![DataStage Asset Browser](/images/integrated_table_1.png)
+
+Verify data asset is present in the project
 
 ![DataStage Asset Browser](/images/integrated_table_2.png)
